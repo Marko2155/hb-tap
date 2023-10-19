@@ -12,7 +12,8 @@ class Makemeasandwich < Formula
   # depends_on "cmake" => :build
 
   def install
-      
+      system "sudo mkdir /opt/homebrew/Cellar/makemeasandwich/1.0/bin"
+      system "cp ./makemeasandwich /opt/homebrew/Cellar/makemeasandwich/1.0/bin/"
   end
 
   test do
